@@ -1,0 +1,15 @@
+meta {
+  name: createPessoa
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/pessoas
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {"name":"John Doe"}
+}

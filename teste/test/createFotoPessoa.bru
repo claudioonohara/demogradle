@@ -1,0 +1,15 @@
+meta {
+  name: createFotoPessoa
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:8080/pessoas/8/fotos
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  file: @file(C:\Users\00222126124\Downloads\test2.jpg)
+}
